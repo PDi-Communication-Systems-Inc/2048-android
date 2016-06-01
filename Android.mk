@@ -12,6 +12,8 @@ LOCAL_AAPT_FLAGS := --generate-dependencies --extra-packages de.cketti.library.c
 
 include $(BUILD_PACKAGE)
 
+include $(CLEAR_VARS)
+
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := de.cketti.library.changelog:libs/de.cketti.library.changelog.jar
 
 include $(BUILD_MULTI_PREBUILT)
