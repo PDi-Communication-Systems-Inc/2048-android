@@ -8,6 +8,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := de.cketti.library.changelog
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
 
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+                      $(LOCAL_PATH)/../ckChangeLog/ckChangeLog/src/main/res
+
 LOCAL_AAPT_FLAGS := --generate-dependencies --extra-packages de.cketti.library.changelog --auto-add-overlay
 
 include $(BUILD_PACKAGE)
